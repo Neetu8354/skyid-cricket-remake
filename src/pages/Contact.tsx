@@ -15,33 +15,9 @@ const Contact = () => {
       description:
         "Contact Skyexchange6 24x7 on WhatsApp for Sky Exchange Login help, ID creation, deposit & withdrawal support. Real human support, replies in under 60 seconds.",
       canonical: "https://skyexchange6.live/contact",
-      keywords:
-        "contact skyexchange6, skyexchange6 support, sky exchange login support, whatsapp cricket id, online betting website india",
+      imageWidth: 1216,
+      imageHeight: 640,
       jsonLd: [
-        {
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          name: "Contact Skyexchange6",
-          url: "https://skyexchange6.live/contact",
-          description: "Get 24x7 support for Skyexchange6 login, deposits, withdrawals and account help.",
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Skyexchange6",
-          url: "https://skyexchange6.live/",
-          logo: "https://skyexchange6.live/favicon.png",
-          contactPoint: [
-            {
-              "@type": "ContactPoint",
-              contactType: "customer support",
-              availableLanguage: ["English", "Hindi"],
-              areaServed: "IN",
-              hoursAvailable: "Mo-Su 00:00-23:59",
-              url: WHATSAPP_URL,
-            },
-          ],
-        },
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",

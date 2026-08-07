@@ -13,22 +13,15 @@ const Blog = () => {
       description:
         "Skyexchange6 blog — live cricket betting tips online, Sky Exchange Login guides step by step, and safe online sports betting platform reviews for India 2026.",
       canonical: "https://skyexchange6.live/blog",
-      keywords:
-        "skyexchange6 blog, live cricket betting tips online, sky exchange login guide, safe online sports betting websites 2026, online sports gaming platform",
+      imageWidth: 1216,
+      imageHeight: 640,
       jsonLd: {
         "@context": "https://schema.org",
-        "@type": "Blog",
-        name: "Skyexchange6 Blog",
-        url: "https://skyexchange6.live/blog",
-        description:
-          "Cricket betting tips, Sky Exchange Login guides and online sports gaming platform insights for Indian players.",
-        blogPost: BLOG_POSTS.map((p) => ({
-          "@type": "BlogPosting",
-          headline: p.title,
-          datePublished: p.date,
-          url: `https://skyexchange6.live/blog/${p.slug}`,
-          description: p.description,
-        })),
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://skyexchange6.live/" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://skyexchange6.live/blog" },
+        ],
       },
     });
   }, []);

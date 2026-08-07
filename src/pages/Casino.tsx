@@ -19,16 +19,9 @@ const Casino = () => {
       description:
         "Play live casino games in India on Skyexchange6 — Andar Bahar, Teen Patti, Aviator, Roulette, Dragon Tiger and 1000+ titles. INR deposits, instant withdrawal, 24x7 support.",
       canonical: "https://skyexchange6.live/casino",
-      keywords:
-        "live casino india, andar bahar online, teen patti, aviator game, dragon tiger, online sports gaming platform, skyexchange6 online platform, mobile friendly sports betting platforms",
+      imageWidth: 1216,
+      imageHeight: 640,
       jsonLd: [
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          name: "Live Casino on Skyexchange6",
-          url: "https://skyexchange6.live/casino",
-          description: "1000+ live casino games on the Skyexchange6 online platform — playable in INR.",
-        },
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",

@@ -18,7 +18,8 @@ const BlogPost = () => {
       title: `${post.title} | Skyexchange6`,
       description: post.description,
       canonical: url,
-      keywords: post.keywords,
+      imageWidth: 1216,
+      imageHeight: 640,
       type: "article",
       jsonLd: [
         {

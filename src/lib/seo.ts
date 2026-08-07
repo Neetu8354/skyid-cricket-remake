@@ -8,6 +8,7 @@ type SeoOptions = {
   imageAlt?: string;
   imageType?: string;
   keywords?: string;
+  hreflang?: string;
   type?: "website" | "article";
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 };
@@ -65,6 +66,7 @@ export const applySeo = ({
   imageAlt,
   imageType,
   keywords,
+  hreflang,
   type = "website",
   jsonLd,
 }: SeoOptions) => {
@@ -72,6 +74,10 @@ export const applySeo = ({
   ensureMeta('meta[name="description"]', { name: "description", content: description });
   ensureMeta('link[rel="canonical"]', { rel: "canonical", href: canonical });
   if (keywords) ensureMeta('meta[name="keywords"]', { name: "keywords", content: keywords });
+  // Add hreflang self-reference (defaults to canonical URL if not provided)
+  const hrefLangUrl = hreflang || canonical;
+  ensureMeta('link[rel="alternate"][hreflang="en-IN"]', { rel: "alternate", hreflang: "en-IN", href: hrefLangUrl });
+  ensureMeta('link[rel="alternate"][hreflang="x-default"]', { rel: "alternate", hreflang: "x-default", href: hrefLangUrl });
   ensureMeta('meta[property="og:title"]', { property: "og:title", content: title });
   ensureMeta('meta[property="og:description"]', { property: "og:description", content: description });
   ensureMeta('meta[property="og:type"]', { property: "og:type", content: type });

@@ -14,18 +14,9 @@ const About = () => {
       description:
         "About Skyexchange6 (Sky Exchange Login) — India's leading online sports gaming platform since 2017. 10L+ players, 1000+ games, instant ₹ withdrawals, 24x7 WhatsApp support.",
       canonical: "https://skyexchange6.live/about",
-      keywords:
-        "about skyexchange6, sky exchange login, online sports gaming platform, sports betting platform online, skyexchange6 online platform",
-      jsonLd: [
-        {
-          "@context": "https://schema.org",
-          "@type": "AboutPage",
-          name: "About Skyexchange6",
-          url: "https://skyexchange6.live/about",
-          description:
-            "Learn about Skyexchange6 — India's trusted online cricket and casino gaming platform.",
-        },
-        {
+      imageWidth: 1216,
+      imageHeight: 640,
+      jsonLd: [{
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [

@@ -16,16 +16,9 @@ const Cricket = () => {
       description:
         "Bet on live cricket online in India — IPL 2026, T20 World Cup, ODI & Test markets on Skyexchange6. Lowest commission, fastest odds, instant ₹ withdrawals.",
       canonical: "https://skyexchange6.live/cricket",
-      keywords:
-        "live cricket betting tips online, ipl 2026, how to bet on live cricket matches online, sports betting platform online, online sports gaming platform, skyexchange6 online platform",
+      imageWidth: 1216,
+      imageHeight: 640,
       jsonLd: [
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          name: "Live Cricket Betting on Skyexchange6",
-          url: "https://skyexchange6.live/cricket",
-          description: "Live cricket betting markets on Skyexchange6 — IPL, T20 World Cup, ODI, Test cricket.",
-        },
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
